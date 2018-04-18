@@ -1,10 +1,9 @@
-import sys
-from PyQt4 import QtGui
+def add (a:int, b:int) -> int:
+  return a + b
 
-app = QtGui.QApplication(sys.argv)
+def add (a:float, b:float) -> float:
+  return a + b
 
-window = QtGui.QWidget()
-window.setGeometry(0, 0, 500, 300)
-window.setWindowTitle("PyQT Tuts!")
+print (add (2, 3))
 
-window.show()
+print (add(2.0, 3.0))
